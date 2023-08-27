@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<toast activationType='{ activation_type }' launch='{ activation_arguments }' duration='{ duration }'>
+    <visual>
+        <binding template='ToastGeneric'>
+            {{ if icon }}
+            <image placement='appLogoOverride' src='{ icon }' />
+            {{ endif }}
+            {{ if title }}
+            <text><![CDATA[{ title }]]></text>
+            {{ endif }}
+            {{ if message }}
+            <text><![CDATA[{ message }]]></text>
+            {{ endif }}
+        </binding>
+    </visual>
+    {{ if audio }}
+	<audio src='{ audio }' loop='{ loopeable }' />
+	{{ else }}
+	<audio silent='true' />
+	{{ endif }}
+    {{ if actions }}
+    <actions>
+        {{ for a in actions }}
+        <action activationType='{ a.action_type }' content='{ a.label }' arguments='{ a.arguments }' />
+        {{ endfor }}
+    </actions>
+    {{ endif }}
+</toast>
