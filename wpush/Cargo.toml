@@ -7,15 +7,7 @@ description = "WPush is a Rust library that makes sending Windows toasts easier.
 readme = "../README.md"
 repository = "https://github.com/saez-juan/wpush.rs"
 license = "MPL-2.0"
-keywords = [
-	"windows",
-	"wsl",
-	"notification",
-	"push",
-	"toast",
-	"powershell",
-	"bash",
-]
+keywords = ["windows", "wsl", "notification", "push", "toast"]
 categories = ["os", "os::windows-apis", "gui"]
 
 [dependencies]
