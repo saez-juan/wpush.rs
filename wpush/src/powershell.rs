@@ -1,5 +1,4 @@
 use std::fs;
-// use std::os::unix::fs::PermissionsExt;
 use std::process::Command;
 use std::{fs::File, path::PathBuf};
 
@@ -35,17 +34,6 @@ impl PowerShell {
             dbg!(e);
             return None;
         }
-
-        let tmp_file = tmp_file.unwrap();
-        // let metadata = tmp_file.metadata().unwrap();
-        // let mut permissions = metadata.permissions();
-
-        // permissions.set_mode(0o755);
-
-        // if let Err(e) = tmp_file.set_permissions(permissions) {
-        //     dbg!(e);
-        //     return None;
-        // }
 
         let windows_filepath = format!(
             "\\\\wsl.localhost\\Ubuntu{}",
