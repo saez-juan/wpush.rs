@@ -1,6 +1,6 @@
 [package]
 name = "wpush"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 authors = ["Juan Saez <saez.juan08@gmail.com>"]
 description = "WPush is a Rust library that makes sending Windows toasts easier. Includes WSL support!"

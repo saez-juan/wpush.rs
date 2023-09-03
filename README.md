@@ -18,7 +18,7 @@ Add this to your `cargo.toml`:
 
 ```toml
 [dependencies]
-wpush = "0.1.0"
+wpush = "0.1.1"
 ```
 
 On your `main.rs` you could do something like this:
