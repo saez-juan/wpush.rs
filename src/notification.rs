@@ -1,6 +1,8 @@
+///! Notification module
 use crate::{powershell::PowerShell, templates::Template};
 use serde::Serialize;
 
+/// Notification struct
 pub struct Notification {
     pub app_id: String,
     pub title: Option<String>,
